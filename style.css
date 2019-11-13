@@ -1,0 +1,161 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.group:after {
+  display: block; 
+  height: 0; 
+  font-size: 0; 
+  content: "."; 
+  clear: both; 
+  visibility: hidden; 
+} /* For clearing */
+  
+body {
+  background-color: #f8f8f8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  color: hsl(229, 6%, 66%);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: column;
+  width: 960px;
+  margin: auto;
+}
+
+.head {
+  margin: auto;
+}
+
+.header {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 500px;
+}
+
+.header h1 {
+  font-weight: 200;
+}
+
+.header-bold {
+  font-weight: 900;
+}
+
+.header h2 {
+  padding-top: 15px;
+  font-size: 1em;
+  font-weight: 350;
+}
+
+h1, h2, h3 {
+  color: hsl(234, 12%, 34%);
+}
+
+.main-card-wrapper {
+  margin: auto;
+  display: flex;  
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.card-column
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+  align-items: center;
+  
+}
+
+.card {
+    margin: 1.5rem;
+    padding: 2rem;
+    font-size: .85rem;
+    font-weight: 400;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    text-align: left;    
+    border:  1px solid #eee;
+    border-radius: 6px;        
+    -webkit-box-shadow: 0px 13px 25px -13px rgba(160,184,214,1);
+    -moz-box-shadow: 0px 13px 25px -13px rgba(160,184,214,1);
+    box-shadow: 0px 13px 25px -13px rgba(160,184,214,1);
+}
+
+.card p {
+  font-size: 10px;
+}
+
+.card-img{
+  align-self: flex-end;
+}
+
+img {
+  height: 5em;
+  padding-top: 25px;
+}
+
+#super {
+  border-top: 4px solid hsl(180, 62%, 55%);
+  height: 190px;
+}
+
+#team {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+#karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+#calc {
+  border-top: 4px solid hsl(212, 86%, 64%);
+  height: 190px;
+}
+
+/*  Media Queries */
+@media (max-width: 630px) { 
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow-x: hidden;
+    }
+
+    .header {
+        font-size: 0.7rem;
+    } 
+
+    .header h2 {
+      padding-left: 100px;
+      padding-right: 100px;
+      font-size: .9rem;
+    }
+
+    .main-card-wrapper {
+        flex-direction: column;  
+        width: 100%;              
+    } 
+
+    .card-column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+
+}
