@@ -27,8 +27,7 @@ body {
   display: grid;
   grid-template-columns: column;  
   margin: auto;  
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 375px;  
 }
 
 .head {
