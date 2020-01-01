@@ -29,7 +29,7 @@ body {
 }
 
 header {
-   padding: 80px 30px 10px 30px;
+   padding: 80px 15px 10px 15px;
   /* position: relative; */
   
 }
@@ -54,11 +54,11 @@ h1, h2, h3 {
  
 .main-card-wrapper {
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .card {
-    margin: 4.3rem;
+    margin: 3rem;
     padding: 1.5rem;
     font-size: 1em;
     font-weight: 400;
