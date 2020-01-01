@@ -25,13 +25,13 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: column;       
+  grid-template-columns: column;  
+  margin: auto;     
 }
 
 header {
-   padding: 80px 15px 10px 15px;
-  /* position: relative; */
-  
+   padding: 50px 15px 0 15px;  
+   margin: auto;
 }
 
 header h1 {
@@ -45,7 +45,7 @@ header h1 {
 header h2 {
   padding: 30px 15px 0 15px;  
   font-size: 1.2em;
-  font-weight: 350;
+  font-weight: 395;
 }
 
 h1, h2, h3 {
@@ -114,41 +114,29 @@ footer {
 .attribution a {
    color: hsl(0, 78%, 62%); 
 }
-/* 
- Media Queries
-@media (max-width: 630px) { 
+
+
+/* Media Queries */
+@media (min-width: 630px) { 
     .wrapper {
         display: flex;
         flex-direction: column;
         height: 100%;
-        width: auto;
-        padding-left: 10px;
-        padding-right: 10px;
-        overflow-x: hidden;
+        max-width: 1140px;                
     }
-
-    .header {
-        font-size: 0.7rem;
-    } 
-
-    .header h2 {
-      padding-left: 100px;
-      padding-right: 100px;
-      font-size: .9rem;
+    
+    header {
+      width: 550px;
     }
 
     .main-card-wrapper {
-        flex-direction: column;  
-        width: 100%;              
+      display: flex;        
+      align-items: center;
+      width: 100%;              
     } 
 
     .card-column {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-left: 80px;
-        padding-right: 80px;
+      width: 100%;
+        
     }
-
-
-} */
+} 
