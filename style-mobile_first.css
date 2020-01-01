@@ -58,7 +58,7 @@ h1, h2, h3 {
 }
 
 .card {
-    margin: 3rem;
+    margin: 3rem 1.8rem 3rem 1.8rem;
     padding: 1.5rem;
     font-size: 1em;
     font-weight: 400;
